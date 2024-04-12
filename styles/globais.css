@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+.navbar{
+    top: 0;
+    padding: 1rem;
+    position: sticky;
+    z-index: 99;
+    background-color: #2c2c2c;
+    box-shadow: 10px 0px 10px #2c2c2c;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    color: rgb(111, 111, 249);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo span{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.nav-icon-container img:first-child{
+    margin-right: 1rem;
+}
+
+nav ul li{
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+
+    
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-button{
+    display: none;
+}
+
+header{
+    background-image: radial-gradient(white, rgb(231, 227, 227));
+    flex-wrap: wrap;
+}
+
+.header-button-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.header-button-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-button-side-left h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-button-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-button-side-left button{
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header-button-side-left button:hover{
+    background-color: #004c94;
+    transition: all 0.2s;
+}
+
+.header-button-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button-side-right img{
+    width: 115%;
+}
+
+@media (max-width: 800px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-button{
+        display: block;
+    }
+    .header-button-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav{
+        position: absolute;
+        background-color: rgb(42, 41, 41);
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+main{
+    background: red;
+}
+.gray-background{
+    background-color: #2c2c2c;
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.selection-title{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cols{
+    display: grid;
+    align-items: center;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.cols-3 img{
+    max-width: 100%;
+}
+
+.cols-4 img{
+    max-width: 100%;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cols>*{
+    cursor:pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: #0084ff;
+    border-radius: 999px;
+    margin: 8px auto 0 auto;
+}
+
+.product{
+    color: white;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+.rate{
+    color: rgb(78, 78, 247);
+    font-size: 1.3rem;
+}
+
+.product-price{
+    font-weight: 600;
+}
+
+.barra{
+    background-color: rgb(128, 128, 251);
+    width: 100%;
+    height: 3px;
+}
+
+footer{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2c2c2c;
+}
+
+footer .redes-rodape a{
+    color: red;
+}
+
+footer .links-rodape  li{
+    display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 7px;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+footer .links-rodape  li:hover{
+    transform: translateX(-10px);
+}
+
+.img-sociais{
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.img-sociais:hover{
+    transform: translateY(-10px);
+}
